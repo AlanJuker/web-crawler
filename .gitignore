@@ -5,3 +5,6 @@ dist/
 # IDE
 .vscode/
 .idea/
+
+# Logs
+data/data.json
