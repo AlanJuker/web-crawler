@@ -1,5 +1,7 @@
 # Web Crawler Project
 
+[![CI](https://github.com/AlanJuker/web-crawler/actions/workflows/ci.yml/badge.svg)](https://github.com/AlanJuker/web-crawler/actions/workflows/ci.yml)
+
 ## Overview
 - This project retrieves the top 30 entries from [Hacker News](https://news.ycombinator.com/) based on the number, the title, the points, and the number of comments for each entry, and applies filtering operations.
   
