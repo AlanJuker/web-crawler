@@ -9,7 +9,8 @@ export function parseEntries(html: string): Entry[] {
   // Extract relevant information for each news item
   $('.athing').each((_, el) => {
     const number = $(el).find('.rank').text().replace('.', '');
-    const title = $(el).find('.titleline a').text();
+    // Only the story link: .titleline also contains the .sitebit domain link
+    const title = $(el).find('.titleline > a').first().text();
     const subtext = $(el).next().find('.subtext');
     const points = parseInt(subtext.find('.score').text()) || 0;
     const commentsText = subtext.find('a').last().text();
